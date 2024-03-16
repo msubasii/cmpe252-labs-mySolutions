@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//hocam method adı ve mainde çağırılan method uymuyordu o yüzden modulus yerine maindeki method adını kullandım
+//bir de 25. satırda p yerinde mod yazıyordu ancak orada methodun çıktısını istiyoruz o yüzden mod yerine 24. satırdaki p yi kullandım :)
+
+int divisorPower(int num, int d){
+
+return  num % d;
+
+}
+
+int main()
+{
+    int num;
+    int d;
+    int p;
+
+    printf("Enter number> ");
+    scanf("%d", &num);
+    printf("Enter divisor> ");
+    scanf("%d", &d);
+    p = divisorPower(num, d);
+    printf("Remainder : %d",p);
+    return 0;
+}
